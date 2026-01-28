@@ -10,7 +10,7 @@ on:
 jobs:
   test:
     name: Node
-    runs-on: ubuntu-latest
+    runs-on: tenki-standard-medium-4c-8g
 
     steps:
       - uses: actions/checkout@v5
@@ -35,7 +35,7 @@ jobs:
 
   runtime-lint-coverage:
     name: Runtime, Linting, and Coverage
-    runs-on: ubuntu-latest
+    runs-on: tenki-standard-medium-4c-8g
 
     steps:
       - uses: actions/checkout@v5
@@ -82,7 +82,7 @@ jobs:
       matrix:
         os: [ubuntu-latest, macos-13, windows-latest]
 
-    runs-on: ${{ matrix.os }}
+    runs-on: tenki-standard-medium-4c-8g
 
     steps:
       - uses: actions/checkout@v5
