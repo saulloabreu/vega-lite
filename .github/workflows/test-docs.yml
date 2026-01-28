@@ -11,7 +11,7 @@ on:
 jobs:
   build-site:
     name: Build Site
-    runs-on: ubuntu-latest
+    runs-on: tenki-standard-medium-4c-8g
 
     steps:
       - uses: actions/checkout@v5
